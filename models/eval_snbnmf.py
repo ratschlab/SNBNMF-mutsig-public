@@ -171,16 +171,9 @@ for j in range(lst_av_acc.shape[1]):
         continue
     for k in np.arange(len(tmp_mae)):
         if 'constr' in method:
-            # best_idx = set(np.argsort(tmp_acc)[-(k+1):]) &  set(np.argsort(tmp_gacc)[:k]) &  set(np.argsort(tmp_mae)[:k])
-            # best_idx = set(np.argsort(tmp_gacc)[:k]) &  set(np.argsort(tmp_mae)[:k])
             best_idx = set(np.argsort(tmp_acc)[-(k+1):]) &  set(np.argsort(tmp_gacc)[-(k+1):]) &  set(np.argsort(tmp_mae)[:k+1])
-            # best_idx = set(np.argsort(tmp_acc)[-(k+1):]) &  set(np.argsort(tmp_mae)[:k])
-            # best_idx = set(np.argsort(tmp_acc)[-(k+1):]) &  set(np.argsort(tmp_gacc)[-(k+1):])
-            # best_idx = set(np.argsort(tmp_gacc)[-(k+1):])
-            # best_idx = set(np.argsort(tmp_acc)[-(k+1):])
         else:
             best_idx = set(np.argsort(tmp_acc)[-(k+1):])  &  set(np.argsort(tmp_mae)[:k+1])
-            # best_idx = set(np.argsort(tmp_acc)[-(k+1):])
             print('no counfounder')
             
         if len(best_idx) > 0:
