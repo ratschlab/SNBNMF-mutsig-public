@@ -1,7 +1,3 @@
-# SNBNMF-mutsig-public
-Supervised Negative Binomial NMF for Mutational Signature Discovery
-
-
 # SNBNMF - Supervised Negative Binomial NMF for Mutational Signature Discovery
 
 ## Reference
