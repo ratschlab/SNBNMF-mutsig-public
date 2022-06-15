@@ -7,9 +7,7 @@ Supervised Negative Binomial NMF for Mutational Signature Discovery
 ## Reference
 > Xinrui Lyu, Jean Garret, Gunnar Rätsch, Kjong-Van Lehmann, Mutational signature learning with supervised negative binomial non-negative matrix factorization, Bioinformatics, Volume 36, Issue Supplement_1, July 2020, Pages i154–i160, https://doi.org/10.1093/bioinformatics/btaa473
 
-## Training and Evaluation
-
-### Deep Probabilistic SOM
+## Training
 
 The SNBNMF model is defined `model/snbnmf.py`.
 To train snbnmf model on the ICGC PCAWG dataset using default parameters:
